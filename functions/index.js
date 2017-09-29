@@ -42,7 +42,7 @@ exports.sendMessage = functions.database
 
     //require the Twilio module and create a REST client
     const client = require('twilio')(twilio_account_sid, twilio_auth_token);
-    const sms_message = `https://ers-dispatch.firebaseapp.com/${pushID}`;
+    const sms_message = `https://ers-dispatch.firebaseapp.com/?id=${pushID}`;
     for (let phoneNumber of phoneNumbers) {
       client.messages.create(
         {
