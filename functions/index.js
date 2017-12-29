@@ -11,7 +11,7 @@ const admin = require('firebase-admin');
 admin.initializeApp(functions.config().firebase);
 
 exports.sendMessage = functions.database
-  .ref('/ersDispatches/{pushId}')
+  .ref('/gfdDispatches/{pushId}')
   .onCreate(event => {
     // # not using below for now to respect 160 character limit
     // // dispatchObj
