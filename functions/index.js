@@ -34,7 +34,7 @@ exports.sendMessage = functions.database
     const nick_phone_number = functions.config().ers.nick;
     const max_phone_number = functions.config().ers.max;
     const phoneNumbers = [
-      // masato_phone_number,
+      masato_phone_number,
       kevin_phone_number
     ];
 
